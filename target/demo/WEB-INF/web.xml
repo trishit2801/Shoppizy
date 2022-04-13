@@ -1,0 +1,78 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+    <param-name>MyWebsite</param-name>
+    <param-value>http://abhiramborige.me</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>servlet</servlet-name>
+    <servlet-class>com.example.servlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>com.example.register</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>bill</servlet-name>
+    <servlet-class>com.example.bill</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>adminlogin</servlet-name>
+    <servlet-class>com.example.adminlogin</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>com.example.admin</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>updatePrice</servlet-name>
+    <servlet-class>com.example.updatePrice</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>deleteProduct</servlet-name>
+    <servlet-class>com.example.deleteProduct</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet</servlet-name>
+    <url-pattern>/api</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>bill</servlet-name>
+    <url-pattern>/bill</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminlogin</servlet-name>
+    <url-pattern>/admin_login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/admin_api</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatePrice</servlet-name>
+    <url-pattern>/update_price</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteProduct</servlet-name>
+    <url-pattern>/delete_product</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
